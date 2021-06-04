@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inconsolata', monospace;
+}
+main{
+    display: flex;
+}
+.menu {
+    overflow: hidden;
+    background-color: #282a34;
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    border-radius: 0px 20px 20px 0px;
+}
+.menu-logo, .user-img, .user-desc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+.menu-logo i{
+    padding-right: 10px;
+}
+.menu-logo i, p span{
+    font-size: 30px;
+}
+.menu-logo i, p span, a:hover, i.active, li.list-opitios:hover, .watch-stories i:hover, .stories-user i:hover{
+    background: -webkit-linear-gradient(#8440b7, #e2336b,#fcac46);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.5s;
+}
+.menu-logo p, p span {
+    font-family: 'Pattaya', sans-serif;
+    font-size: 30px;
+    color: #fafafa;
+    text-transform: capitalize;
+}
+.user-img {
+    padding-top: 5px;
+    cursor: pointer;
+}
+.user-img img {
+    width: 100px;
+    border-radius: 100%;
+    background: linear-gradient(to left, #e2336b, #fcac46, purple);
+    padding: 3px;
+}
+.user-img .borda{
+    background-color: transparent;
+    width: 120px;
+    height: 120px;
+    position: relative;
+    margin-left: -115px;
+}
+.user-info, .user-desc p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.user-info p.name {
+    font-size: 30px;
+    color: #ccc;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.user-info p.user-name, .user-desc p.info-name {
+    color: #817f7f;     
+    text-transform: capitalize;
+}
+.user-desc {
+    padding: 20px 0;
+}
+.user-desc p{
+    padding: 0 20px;
+    border-right: 1px solid #505050;
+}
+.user-desc p.info-num{
+    color: #ccc;
+    font-size: 20px;
+}
+ul.menu--itens::after{
+    content: '';
+    display: block;
+    width: 250px;
+    border-top: 1px solid #505050;
+    margin: 15px auto;
+}
+ul li{
+    list-style: none;
+    padding: 10px 20px;
+}
+ul a {
+    text-decoration: none;
+    color: #aaa;
+    display: flex;
+    font-size: 16px;
+    font-weight: bold;
+}
+ul a p{
+    padding: 0 0px 0px 20px;
+    text-transform: capitalize;
+}
+.feed {
+    margin-left: 280px;
+    width: 100%;
+    height: 100vh;
+    background-color: #3c3f51;
+}
+.head-feed{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+.search{
+    margin: 20px 70px;
+}
+.search input {
+    width: 200px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(136, 136, 136, 0.486);
+    text-align: center;
+    outline: none;
+}
+::-webkit-input-placeholder {
+    color: #ccc;
+}
+.search i {
+    position: absolute;
+    margin: 10px;
+    color: #aaa;
+}
+.opitions ul {
+    display: flex;
+    cursor: pointer;
+    margin: 100px 100px 100px 100px;
+}
+.opitions ul i{
+    color: #fafafa;
+}
+.opitions button{
+    width: 120px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to right, #e2336a, #fcad46e7);
+    cursor: pointer;
+    font-weight: 300;
+    color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.opitions button:hover {
+    background: rgba(204, 204, 204, 0.507);
+}
+.opitions button i{
+    background-color: #fafafa62;
+    padding: 5px;
+    border-radius: 100%;
+    font-size: 10px;
+}
+.opitions button p{
+    margin-left: 10px;
+}
+.stories-info{
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 100px 10px 100px;
+    text-transform: capitalize;
+    color: #fafafa;
+    align-items: center;
+}
+.stories-info p.stories-p1{
+    font-weight: bold;
+    font-size: 20px;
+}
+.watch-stories{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.watch-stories i {
+    font-size: 10px;
+    border: 1px solid #686767;
+    border-radius: 100%;
+    padding: 8px;
+}
+.watch-stories p{
+    margin-left: 10px;
+}
+.stories-user{
+    width: 900px;
+    margin: 0 10px 10px 100px;
+    display: flex;
+    align-items: center;
+}
+.stories-user i{
+    position: absolute;
+    margin-left: 905px;
+    color: #fafafa;
+    cursor: pointer;
+}
+.stories-user .user-img img{
+    width: 80px;
+}
+.stories-user .user-img i{
+    position: absolute;
+    margin: 10px 15px 10px 10px;
+    background-color: #8440b757;
+    border-radius: 100%;
+    padding: 40px;
+}
