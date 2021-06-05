@@ -117,8 +117,179 @@
                         <i class="fas fa-play"></i>
                 </div>
             </div>
-            <div class="feed-friends"></div>
+            <div class="feed-container">
+                <div class="feed-info">
+                    <p>Feed</p>
+                    <div class="filtter-feed">
+                        <p class="active">latest</p>
+                        <p>popular</p>
+                    </div>
+                </div>
+                <div class="feed-space">
+                    <div class="feed-img">
+                        <img src="/img/feed1.jpeg" alt="usuario">
+                        <div class="likes">
+                            <div class="likes-user">
+                                <img src="/img/user1.jpg" alt="usuario"> 
+                                <p class="p-user"> @janne_doee</p>
+                            </div>
+                            <div class="likes-like">
+                                <i class="far fa-heart"></i>
+                                <p>325</p>
+                                <i class="far fa-comment"></i>
+                                <p>200</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feed-img">
+                        <img src="/img/feed2.jpeg" alt="usuario">
+                        <div class="likes">
+                            <div class="likes-user">
+                                <img src="/img/user3.jpg" alt="usuario"> 
+                                <p class="p-user"> @janne_doee</p>
+                            </div>
+                            <div class="likes-like">
+                                <i class="far fa-heart"></i>
+                                <p>325</p>
+                                <i class="far fa-comment"></i>
+                                <p>200</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feed-img">
+                        <img src="/img/feed3.jpeg" alt="usuario">
+                        <div class="likes">
+                            <div class="likes-user">
+                                <img src="/img/user6.jpg" alt="usuario"> 
+                                <p class="p-user"> @janne_doee</p>
+                            </div>
+                            <div class="likes-like">
+                                <i class="far fa-heart"></i>
+                                <p>325</p>
+                                <i class="far fa-comment"></i>
+                                <p>200</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="feed-space">
+                    <div class="feed-img">
+                        <img src="/img/feed4.jpeg" alt="usuario">
+                        <div class="likes">
+                            <div class="likes-user">
+                                <img src="/img/user5.jpg" alt="usuario"> 
+                                <p class="p-user"> @janne_doee</p>
+                            </div>
+                            <div class="likes-like">
+                                <i class="far fa-heart"></i>
+                                <p>325</p>
+                                <i class="far fa-comment"></i>
+                                <p>200</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feed-img">
+                        <img src="/img/feed5.jpeg" alt="usuario">
+                        <div class="likes">
+                            <div class="likes-user">
+                                <img src="/img/user4.jpg" alt="usuario"> 
+                                <p class="p-user"> @janne_doee</p>
+                            </div>
+                            <div class="likes-like">
+                                <i class="far fa-heart"></i>
+                                <p>325</p>
+                                <i class="far fa-comment"></i>
+                                <p>200</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feed-img">
+                        <img src="/img/feed6.jpeg" alt="usuario">
+                        <div class="likes">
+                            <div class="likes-user">
+                                <img src="/img/user5.jpg" alt="usuario"> 
+                                <p class="p-user"> @janne_doee</p>
+                            </div>
+                            <div class="likes-like">
+                                <i class="far fa-heart"></i>
+                                <p>325</p>
+                                <i class="far fa-comment"></i>
+                                <p>200</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="feed-space">
+                    <div class="feed-img">
+                        <img src="/img/feed2.jpeg" alt="usuario">
+                        <div class="likes">
+                            <div class="likes-user">
+                                <img src="/img/user1.jpg" alt="usuario"> 
+                                <p class="p-user"> @janne_doee</p>
+                            </div>
+                            <div class="likes-like">
+                                <i class="far fa-heart"></i>
+                                <p>325</p>
+                                <i class="far fa-comment"></i>
+                                <p>200</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feed-img">
+                        <img src="/img/feed3.jpeg" alt="usuario">
+                        <div class="likes">
+                            <div class="likes-user">
+                                <img src="/img/user3.jpg" alt="usuario"> 
+                                <p class="p-user"> @janne_doee</p>
+                            </div>
+                            <div class="likes-like">
+                                <i class="far fa-heart"></i>
+                                <p>325</p>
+                                <i class="far fa-comment"></i>
+                                <p>200</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feed-img">
+                        <img src="/img/feed1.jpeg" alt="usuario">
+                        <div class="likes">
+                            <div class="likes-user">
+                                <img src="/img/user6.jpg" alt="usuario"> 
+                                <p class="p-user"> @janne_doee</p>
+                            </div>
+                            <div class="likes-like">
+                                <i class="far fa-heart"></i>
+                                <p>325</p>
+                                <i class="far fa-comment"></i>
+                                <p>200</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+                
+            </div>
         </div>
+        <button onclick="backToTop()" id="btnTop"><i class="fas fa-chevron-up"></i></button>
     </main>
+    <script>
+        window.onscroll = function() {
+            scroll();
+        }
+        function scroll() {
+            let btn =document.getElementById("btnTop");
+            if(document.documentElement.scrollTop > 50){
+                btn.style.display ="block"
+            }else{
+                btn.style.display ="none";
+            }
+        }
+        function backToTop() {
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
 </body>
 </html>
